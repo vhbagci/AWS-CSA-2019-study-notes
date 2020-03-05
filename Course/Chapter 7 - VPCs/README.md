@@ -20,11 +20,12 @@ Amazon Virtual Private Cloud (Amazon VPC) lets you provision a logically isolate
   * Internet Gateway: The Amazon VPC side of a connection to the public Internet.
   * EIP addresses
   * NAT Gateway: A highly available, managed Network Address Translation (NAT) service for your resources in a private subnet to access the Internet.
-  * Virtual private gateway: The Amazon VPC side of a VPN connection.
   * Peering Connection: A peering connection enables you to route traffic via private IP addresses between two peered VPCs.
-  * VPC Endpoints: Enables private connectivity to services hosted in AWS, from within your VPC without using an Internet Gateway, VPN, Network Address Translation (NAT) devices, or firewall proxies.
+  * VPC Endpoints: Enables private connectivity powered by PrivateLink to services hosted in AWS, from within your VPC without using an Internet Gateway, VPN, Network Address Translation (NAT) devices, or firewall proxies.
+    * VPC Gateway Endpoint for S3 and DynamoDB
+    * VPC Interface Endpoint for other AWS resources
   * Egress-only Internet Gateway: A stateful gateway to provide egress only access for **IPv6** traffic from the VPC to the Internet.
-  * Virtual private gateway
+  * Virtual private gateway: The Amazon VPC side of a VPN connection.
   * Customer gateway
   * VPN connection
 
@@ -123,7 +124,7 @@ When we create a VPC, we pick a name tag and enter a CIDR block for it. By defau
 
 ### Internet Gateway (IGW)
 
-An IGW is a horizontally scaled, redundant, and highly available Amazon VPC component that allows communication between that allows communication between instances in your Amazon VPC and the internet.
+An IGW is a horizontally scaled, redundant, and highly available Amazon VPC component that allows communication between instances in your Amazon VPC and the internet.
 
 You can create an Internet Gateway for a VPC by picking a name tag.
 

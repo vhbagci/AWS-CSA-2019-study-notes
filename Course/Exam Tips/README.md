@@ -18,12 +18,12 @@
 
 ### [EBS](https://github.com/AlessioCasco/AWS-CSA-2019-study-notes/blob/master/EC2/README.md#ami-types)
 
-* EBS backed volumes are persistent
+* EBS backed volumes are persistent.
 * Instance Store backed volumes are not persistent (ephemeral).
 * EBS Volumes can be detached and reattached to other EC2 instances.
 * Instance store volume cannot be detached and reattached to other instances - they exist only for the life of that instance.
-* EBS volumes can be stopped; data will persists.
-* Instance store volumes cannot be stopped - if you stop them, data will be lost.
+* EBS volumes can be stopped; data will persist.
+* If you stop instance store volumes, data will be lost.
 * EBS Backed = Store Data for Long term.
 * Instance Store = You should not use it for long-term data storage.
 
@@ -33,13 +33,13 @@
 
 ## SWF Actors
 
-* Workflow Started: An application that can initiate a workflow.
-* Decider: Control the flow of activity tasks in a workflow execution.
-* Activity Workers: Carry out activity tasks.
+* Workflow Starter: An application that can initiate a workflow.
+* Decider: Controls the flow of activity tasks in a workflow execution.
+* Activity Worker: Carries out activity tasks.
 
 ## [AWS Organizations](https://aws.amazon.com/organizations/)
 
-Using AWS Organizations, you can manage multiple AWS accounts at once. With organizations, you can create groups of accounts a then apply policies to those groups.
+Using AWS Organizations, you can manage multiple AWS accounts at once. With organizations, you can create groups of accounts then apply policies to those groups.
 
 ### What organizations allow you to do
 
@@ -91,7 +91,7 @@ There are two types of resources groups:
 
 ![vpc_peering](https://docs.aws.amazon.com/vpc/latest/peering/images/peering-intro-diagram.png)
 
-VPC Peering is simply a connection between two VPCs that enables you to route traffic between them using private IP addresses. Instances in either VPC can communicate with each other as if they are within the same network, You can create a VPC peering connection between your own VPCs, or with a VPC in another AWS account within a **single reagion**.
+VPC Peering is simply a connection between two VPCs that enables you to route traffic between them using private IP addresses. Instances in either VPC can communicate with each other as if they are within the same network, You can create a VPC peering connection between your own VPCs, or with a VPC in another AWS account within a **single region**.
 
 AWS uses the existing infrastructure of a VPC to create a VPC peering connection; it's neither a gateway nor a VPN connection and does not rely on separate piece of physical hardware. There is no single point of failure for communication or a bandwidth bottleneck.
 

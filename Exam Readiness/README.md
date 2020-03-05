@@ -13,19 +13,19 @@
 
 ### Text Axioms 1
 
-* Expect "Single-AZ" will never be a right answer
-* Using AWS managed services should always be prefered
-* Fault-tolerant and high availability are not the same thing
-  * Fault tolerant: Means that the system hides the failure from the users and there is no loss of service
-  * High availability: Means that the system will always be up and it can fail-over in the event of failure
-* Expect that everything will fail at some point and design accordingly
+* Expect "Single-AZ" will never be a right answer.
+* Using AWS managed services should always be prefered.
+* Fault-tolerant and high availability are not the same thing.
+  * Fault tolerant: Means that the system hides the failure from the users and there is no loss of service.
+  * High availability: Means that the system will always be up and it can fail-over in the event of failure.
+* Expect that everything will fail at some point and design accordingly.
 
 ## Module 2 - Design Performant Architectures
 
 Security:
 
-* [AWS Shield](https://aws.amazon.com/shield/): WS Shield is a managed Distributed Denial of Service (DDoS) protection service
-* [AWS WAF](https://aws.amazon.com/waf/): AWS WAF is a web application firewall that helps protect your web applications from common web exploits that could affect application availability, compromise security, or consume excessive resources
+* [AWS Shield](https://aws.amazon.com/shield/): WS Shield is a managed Distributed Denial of Service (DDoS) protection service.
+* [AWS WAF](https://aws.amazon.com/waf/): AWS WAF is a web application firewall that helps protect your web applications from common web exploits that could affect application availability, compromise security, or consume excessive resources.
 
 ### Text Axioms 2
 
@@ -38,9 +38,9 @@ Security:
 
 ### Text Axioms 3
 
-* Look down the root user
+* Lock down the root user.
 * Security groups only allow. Network ACLs allow explicitly deny.
-* Prefer IAM roles over access keys
+* Prefer IAM roles over access keys.
 
 ## Module 4 - Design Cost-Optimized Architectures
 
@@ -57,5 +57,5 @@ Security:
 
 * IAM Roles are easier and safer than keys and passwords.
 * Monitor metrics across the system.
-* Automate responses to metrics where appropriate
-* Provide alerts for anomalous conditions
+* Automate responses to metrics where appropriate.
+* Provide alerts for anomalous conditions.
